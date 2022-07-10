@@ -7,7 +7,7 @@ export const getStaticProps: GetStaticProps = async () => {
   const feed = [
     {
       id: "1",
-      title: "I'm just testing some things and making sure it works?",
+      title: "I'm just testing some things and making sure it works.. it works!",
       content: "[Apple](https://apple.com) and the good life!",
       published: false,
       author: {
