@@ -5,24 +5,18 @@ import Post, { PostProps } from '../../components/Post'
 import type { NextPage } from "next";
 import Head from "next/head";
 import { trpc } from "../utils/trpc";
+import prisma from "../../lib/prisma";
 
 export const getStaticProps: GetStaticProps = async () => {
-  const feed = [
-    {
-      id: "1",
-      title: "Apple FED w/ 15 years experience",
-      content: "[Apple](https://apple.com) is a great place to work",
-      published: false,
+  const feed = await prisma.post.findMany({
+    where: { published: true },
+    include: {
       author: {
-        name: "Alex Ross",
-        email: "alexross@ar.com",
+        select: { name: true },
       },
     },
-  ]
-  return {
-    props: { feed },
-    revalidate: 10
-  }
+  });
+  return { props: { feed } };
 }
 
 type Props = {
