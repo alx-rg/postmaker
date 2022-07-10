@@ -27,3 +27,6 @@ model User {
 
   @@map(name: "users")
 }
+
+// npx prisma generate - everytime the Prisma schema file is changed
+// npx prisma studio - to access the Prisma Studio GUI
