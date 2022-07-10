@@ -1,6 +1,3 @@
-# Create T3 App
+# Fullstack Authentication Example with Next.js and NextAuth.js
 
-This is an app bootstrapped according to the [init.tips](https://init.tips) stack, also known as the T3-Stack.
-
-npx prisma db push
-npm run dev
+This is the starter project for the fullstack tutorial with Next.js and Prisma. You can find the final version of this project in the [`final`](https://github.com/prisma/blogr-nextjs-prisma/tree/final) branch of this repo.
