@@ -39,8 +39,8 @@ const Drafts: React.FC<Props> = (props) => {
   if (!session) {
     return (
       <Layout>
-        <h1>Current Drafts</h1>
-        <div>Sign in so that you can create and publish your Drafts.</div>
+        <h1>Current MD Drafts</h1>
+        <div>Sign in so that you can create and publish your MD Drafts.</div>
       </Layout>
     );
   }
@@ -48,7 +48,7 @@ const Drafts: React.FC<Props> = (props) => {
   return (
     <Layout>
       <div className="page">
-        <h1>Current Drafts</h1>
+        <h1>Current MD Drafts</h1>
         <main>
           {props.drafts.map((post) => (
             <div key={post.id} className="post">

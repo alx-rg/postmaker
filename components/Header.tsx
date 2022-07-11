@@ -17,7 +17,7 @@ const Header: React.FC = () => {
     <div className="left">
       <Link href="/">
         <a className="bold" data-active={isActive("/")}>
-          Articles
+          MD Articles
         </a>
       </Link>
       <style jsx>
@@ -33,7 +33,7 @@ const Header: React.FC = () => {
       <div className="left">
         <Link href="/">
           <a className="bold" data-active={isActive('/')}>
-            Articles
+            MD Articles
           </a>
         </Link>
         <style jsx>
@@ -71,11 +71,11 @@ const Header: React.FC = () => {
       <div className="left">
         <Link href="/">
           <a className="bold" data-active={isActive('/')}>
-            Feed
+            MD Feed
           </a>
         </Link>
         <Link href="/drafts">
-          <a data-active={isActive('/drafts')}>My drafts</a>
+          <a data-active={isActive('/drafts')}>My MD drafts</a>
         </Link>
         <style jsx>
           {headerStyles}
@@ -86,10 +86,14 @@ const Header: React.FC = () => {
       <div className="right">
         <p>
           {session.user.name} ({session.user.email})
+          {/* <img
+            className="rounded-full w-8 mr-4"
+            src={session.user.image}
+            /> */}
         </p>
         <Link href="/create">
           <button>
-            <a>New post</a>
+            <a>New MD post</a>
           </button>
         </Link>
         <button onClick={() => signOut()}>
