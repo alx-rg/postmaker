@@ -4,7 +4,7 @@ import { useSession, getSession } from 'next-auth/react';
 import Layout from '../components/Layout';
 import Post, { PostProps } from '../components/Post';
 import prisma from '../lib/prisma';
-import draftsStyle from '../styles/header.js';
+import draftsStyle from '../styles/drafts.js';
 
 export const getServerSideProps: GetServerSideProps = async ({ req, res }) => {
   const session = await getSession({ req });

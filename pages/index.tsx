@@ -37,6 +37,7 @@ const Blog: React.FC<Props> = (props) => {
         .post {
           background: white;
           transition: box-shadow 0.1s ease-in;
+          border-radius: 30px;
         }
 
         .post:hover {

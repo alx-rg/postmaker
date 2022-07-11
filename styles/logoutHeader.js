@@ -10,8 +10,10 @@ export default css.logoutHeader
 
   p {
     display: inline-block;
-    font-size: 13px;
-    padding-right: 1rem;
+    font-size: 14px;
+    padding-right: .5rem;
+    font-weight: bold;
+    color: #d7d9d7;
   }
 
   a + a {
@@ -29,7 +31,11 @@ export default css.logoutHeader
   }
 
   button {
-    border: none;
+    margin-left: .5rem;
+    background: #ececec;
+    border: 1px black solid;
+    border-radius: 1rem;
+    padding: .25rem .25rem;
   }
 `;
 

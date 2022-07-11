@@ -52,9 +52,9 @@ const Post: React.FC<PostProps> = (props) => {
 
   return (
     <Layout>
-      <div>
+      <div className='page'>
         <h2>{title}</h2>
-        <p>By {props?.author?.name || 'Rando Peeps'}</p>
+        <p>By {props?.author?.name || 'Author Unknown'}</p>
         <ReactMarkdown children={props.content} />
         {
           !props.published && userHasValidSession && postBelongsToUser && (
@@ -67,10 +67,14 @@ const Post: React.FC<PostProps> = (props) => {
           )
         }
       </div>
+
       <style jsx>{`
+
         .page {
           background: var(--geist-background);
           padding: 2rem;
+          background: white;
+          border-radius: 30px;
         }
 
         .actions {
@@ -79,13 +83,17 @@ const Post: React.FC<PostProps> = (props) => {
 
         button {
           background: #ececec;
-          border: 0;
-          border-radius: 0.125rem;
+          border: 1px black solid;
+          border-radius: 1rem;
           padding: 1rem 2rem;
         }
 
         button + button {
           margin-left: 1rem;
+        }
+
+        .page + .page {
+          margin-top: 2rem;
         }
       `}</style>
     </Layout>

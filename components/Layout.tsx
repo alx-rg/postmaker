@@ -21,13 +21,15 @@ const Layout: React.FC<Props> = (props) => (
       }
 
       body {
-        margin: 0;
-        padding: 0;
+        margin: 100;
+        padding: 100;
         font-size: 16px;
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-          Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-          "Segoe UI Symbol";
-        background: rgba(0, 0, 0, 0.05);
+        Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+        "Segoe UI Symbol";
+        background: rgb(215,217,215);
+        background: linear-gradient(90deg, rgba(215,217,215,1) 0%, rgba(104,166,166,1) 50%, rgba(1,22,64,1) 100%);
+
       }
 
       input,
@@ -35,7 +37,7 @@ const Layout: React.FC<Props> = (props) => (
         font-size: 16px;
       }
 
-      button {
+      button, link {
         cursor: pointer;
       }
     `}</style>

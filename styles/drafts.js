@@ -1,7 +1,12 @@
 import css from 'styled-jsx/css'
 
-export default css.header
+export default css.drafts
 `
+  .post {
+    background: white;
+    border-radius: 30px;
+  }
+
   .bold {
     font-weight: bold;
   }
@@ -10,19 +15,18 @@ export default css.header
     text-decoration: none;
     color: var(--geist-foreground);
     display: inline-block;
-
-    border: 1px black solid;
-    border-radius: 1rem;
-    padding: 1rem 2rem;
   }
 
   .left a[data-active='true'] {
-    color: darkblue;
-    
+    color: gray;
   }
 
   a + a {
     margin-left: 1rem;
+  }
+
+  .post + .post {
+    margin-top: 2rem;
   }
 `;
 

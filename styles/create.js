@@ -21,11 +21,18 @@ export default css.create
 
   input[type='submit'] {
     background: #ececec;
-    border: 0;
+    border: 1px black solid;
+    border-radius: 1rem;
     padding: 1rem 2rem;
   }
 
   .back {
     margin-left: 1rem;
+    text-decoration: none;
+    color: black;
+    background: #ececec;
+    border: 1px black solid;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
   }
 `;
