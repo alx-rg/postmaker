@@ -4,15 +4,15 @@ import prisma from "../../../lib/prisma";
 
 export default async function handle(req, res) {
   // const postId = req.query.id;
-  // const updatedData = req.body;
-  const updatedData = req.body;
+  // const updateMD = req.body;
+  const updateMD = req.body;
   if (req.method === 'UPDATE') {
     const post = await prisma.post.update({
-      where: { id:updatedData.id },
+      where: { id:updateMD.id },
       data: {
-        title: updatedData.title,
-        content: updatedData.content,
-        author: { connect: { email: updatedData.session?.user?.email } },
+        title: updateMD.title,
+        content: updateMD.content,
+        author: { connect: { email: updateMD.session?.user?.email } },
       },
     });
     res.json(post);

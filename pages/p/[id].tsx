@@ -26,6 +26,22 @@ export const getServerSideProps: GetServerSideProps = async ({ params }) => {
 async function publishPost(id: string): Promise<void> {
   await fetch(`/api/publish/${id}`, {
     method: 'PUT',
+    //Updating the "published" value from False => True
+  });
+  await Router.push('/');
+}
+
+async function unpublishPost(id: string): Promise<void> {
+  await fetch(`/api/unpublish/${id}`, {
+    method: 'PUT',
+    //Updating the "published" value from True => False
+  });
+  await Router.push('/');
+}
+
+async function updatePost(id: string): Promise<void> {
+  await fetch(`/api/put/${id}`, {
+    method: 'PUT',
   });
   await Router.push('/');
 }
@@ -62,8 +78,18 @@ const Post: React.FC<PostProps> = (props) => {
           )
         }
         {
-          userHasValidSession && postBelongsToUser && (
+          props.published && userHasValidSession && postBelongsToUser && (
+            <button onClick={() => unpublishPost(props.id)}>Un-Publish</button>
+          )
+        }
+        {
+          !props.published && userHasValidSession && postBelongsToUser && (
             <button onClick={() => deletePost(props.id)}>Delete</button>
+          )
+        }
+        {
+          !props.published && userHasValidSession && postBelongsToUser && (
+            <button onClick={() => updatePost(props.id)}>Update</button>
           )
         }
       </div>
@@ -74,7 +100,7 @@ const Post: React.FC<PostProps> = (props) => {
           background: var(--geist-background);
           padding: 2rem;
           background: white;
-          border-radius: 30px;
+          border-radius: 6px;
         }
 
         .actions {
@@ -82,10 +108,10 @@ const Post: React.FC<PostProps> = (props) => {
         }
 
         button {
-          background: #ececec;
-          border: 1px black solid;
-          border-radius: 1rem;
-          padding: 1rem 2rem;
+          border-radius: 6px;
+          padding: 5px 10px;
+          background-color: white;
+          color: black;
         }
 
         button + button {

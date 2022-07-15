@@ -24,18 +24,13 @@ export default css.logoutHeader
     margin-left: auto;
   }
 
-  .right a {
-    border: 1px solid var(--geist-foreground);
-    padding: 0.5rem 1rem;
-    border-radius: 3px;
-  }
-
   button {
     margin-left: .5rem;
     background: #ececec;
     border: 1px black solid;
-    border-radius: 1rem;
-    padding: .25rem .25rem;
+    border-radius: 6px;
+    padding: 5px 10px;
+    background-color: white;
   }
 `;
 

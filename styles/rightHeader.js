@@ -17,9 +17,10 @@ export default css.rightHeader
   }
 
   .right a {
-    border: 1px solid var(--geist-foreground);
-    padding: 0.5rem 1rem;
-    border-radius: 3px;
+    border: 1px black solid;
+    border-radius: 6px;
+    padding: 5px 10px;
+    background-color: white;
   }
 `;
 

@@ -38,7 +38,7 @@ const Draft: React.FC = () => {
             cols={50}
             onChange={(e) => setContent(e.target.value)}
             placeholder="Content"
-            rows={8}
+            rows={6}
             value={content}
           />
           <input disabled={!content || !title} type="submit" value="Create" />

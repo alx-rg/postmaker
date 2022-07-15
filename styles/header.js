@@ -12,8 +12,9 @@ export default css.header
     display: inline-block;
 
     border: 1px black solid;
-    border-radius: 1rem;
-    padding: 1rem 2rem;
+    border-radius: 6px;
+    padding: 5px 10px;
+    background-color: white;
   }
 
   .left a[data-active='true'] {

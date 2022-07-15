@@ -15,24 +15,25 @@ export default css.create
     width: 100%;
     padding: 0.5rem;
     margin: 0.5rem 0;
-    border-radius: 0.25rem;
-    border: 0.125rem solid rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    border: 1px black solid;
   }
 
   input[type='submit'] {
-    background: #ececec;
     border: 1px black solid;
-    border-radius: 1rem;
-    padding: 1rem 2rem;
+    border-radius: 6px;
+    padding: 5px 10px;
+    background-color: white;
+    color: black;
   }
 
   .back {
     margin-left: 1rem;
     text-decoration: none;
     color: black;
-    background: #ececec;
     border: 1px black solid;
-    border-radius: 1rem;
-    padding: 1rem 2rem;
+    border-radius: 6px;
+    padding: 5px 10px;
+    background-color: white;
   }
 `;

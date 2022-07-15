@@ -12,6 +12,8 @@ const Layout: React.FC<Props> = (props) => (
     <style jsx global>{`
       html {
         box-sizing: border-box;
+        display: flex;
+        justify-content: center;
       }
 
       *,
@@ -24,14 +26,13 @@ const Layout: React.FC<Props> = (props) => (
         margin: 100;
         padding: 100;
         font-size: 16px;
-        max-width: 800px;
+        width: 800px;
         
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
         Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
         "Segoe UI Symbol";
-        background: rgb(215,217,215);
-        background: linear-gradient(90deg, rgba(215,217,215,1) 0%, rgba(104,166,166,1) 50%, rgba(1,22,64,1) 100%);
-
+        background: rgb(0,0,0);
+        background: linear-gradient(270deg, rgba(0,0,0,1) 0%, rgba(110,110,110,1) 46%, rgba(240,240,240,1) 100%);
       }
 
       input,

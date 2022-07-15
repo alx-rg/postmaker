@@ -15,6 +15,7 @@ export default css.drafts
     text-decoration: none;
     color: var(--geist-foreground);
     display: inline-block;
+    
   }
 
   .left a[data-active='true'] {
