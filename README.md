@@ -8,14 +8,17 @@ User can create a Post using the Markdown language. Once a draft has been create
 
 ### Featured Pages
 
-NextAuth was used to authentice a user and create a session in which they could interact with the app. GitHub was used for the login.
+NextAuth was used to authentice a user and create a session in which they could interact with the app. GitHub was used for the login. The GitHub First/Last name is used for the posts.
 ![LogIn](/postmaker1.png)
 
 Once logged in, a user can create a new post
 ![Create New Post](/postmaker2.png)
 
-The post then become a draft that can either be published to the main page, edited, or deleted
+The created posts then are listed in the drafts.
 ![Draft Page](/postmaker3.png)
 
-Published posts are on the main feed/page
+Once into these drafts a user can either publish, edit, or delete the draft
 ![Main Feed/Page](/postmaker4.png)
+
+Published posts are on the main feed/page
+![Main Feed/Page](/postmaker5.png)
