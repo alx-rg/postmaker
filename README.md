@@ -2,43 +2,20 @@
 
 This project uses Next.js and Prisma with data hosted on Heroku for a fullstack app.
 
-<!-- Things to do:
+User can create a Post using the Markdown language. Once a draft has been created and save, the user can then choose to either "Publish" or "Delete" the post. If "Publish" the post will go to the main feed/page along with other posts from other users. Once on the main page, a user can "UnPublish" a post to remove it from the main page, and could then edit or delete it.
 
-Might want to give a small markdown legend i.e bold or italics
-Real time preview / Side by side?
-Experiment with margins -
-make it a max of 4"
-posts = create at, update at, published at Published at ? date published at is null == not published email verified at? (instead of a boolean) emailVerified vs emailVerifiedAt
+# MDPostMaker Experience
 
-image vs avatar url (Two hard Things)[https://martinfowler.com/bliki/TwoHardThings.html]
+### Featured Pages
 
-what happens
+NextAuth was used to authentice a user and create a session in which they could interact with the app. GitHub was used for the login.
+[LogIn](postmaker1.png)
 
-/profile/username - how do you see your posts
+Once logged in, a user can create a new post
+[Create New Post](postmaker2.png)
 
-post could have the category or kind and you could have a list of options - and the list of options could be employement, publication, article,
+The post then become a draft that can either be published to the main page, edited, or deleted
+[Draft Page](postmaker3.png)
 
-user should have attribute called bio, short name and let them fill in their bio in markdown as well
-
-payment gateway with stripe
-
-images - upload (upload and host)[https://github.com/vercel/examples/tree/main/solutions/aws-s3-image-upload]
-
-in the post let them link to the publication (post.url)
-
-select article, then input url
-
-use the media tags to pull in title, description
-
-easier to create new articles
-
-do public github repos pull in
-
-one table is just called article
-one table is called projects?
-
-Might want to give a small markdown legend i.e bold or italics
-Real time preview / Side by side?
-Experiment with margins -
-make it a max of 4"
- -->
+Published posts are on the main feed/page
+[Main Feed/Page](postmaker4.png)
